@@ -1,0 +1,77 @@
+# Xiaohongshu Poster Configuration
+
+# ADB Connection Settings
+adb:
+  # Device connection method: "usb" or "wifi"
+  connection_type: "usb"
+  # For WiFi connection, specify device IP and port
+  device_ip: "192.168.1.100"
+  device_port: 5555
+  # ADB server host (usually localhost)
+  adb_host: "127.0.0.1"
+  adb_port: 5037
+
+# Xiaohongshu App Settings
+xiaohongshu:
+  # Package name of the Xiaohongshu app
+  package_name: "com.xingin.xhs"
+  # Main activity to launch
+  main_activity: "com.xingin.xhs.index.v2.IndexActivityV2"
+
+# Timing Settings (in seconds)
+timing:
+  # Wait time after launching app
+  app_launch_wait: 3
+  # Wait time after each UI interaction
+  action_wait: 1.5
+  # Wait time for media to upload
+  upload_wait: 10
+  # Wait time after posting
+  post_complete_wait: 5
+
+# Screen Coordinates (adjust based on your device resolution)
+# These are default values for a 1080x2400 resolution device
+coordinates:
+  # Resolution of your device
+  screen_width: 1080
+  screen_height: 2400
+
+  # Post button (usually center bottom + icon)
+  post_button:
+    x: 540
+    y: 2280
+
+  # Select image/video option
+  image_option:
+    x: 270
+    y: 1800
+  video_option:
+    x: 810
+    y: 1800
+
+  # Next button after selecting media
+  next_button:
+    x: 980
+    y: 150
+
+  # Title input area
+  title_input:
+    x: 540
+    y: 400
+
+  # Content/description input area
+  content_input:
+    x: 540
+    y: 700
+
+  # Publish button
+  publish_button:
+    x: 980
+    y: 150
+
+# Post Settings
+post:
+  # Default hashtags to add
+  default_hashtags: []
+  # Add location to posts
+  add_location: false
